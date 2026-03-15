@@ -1,0 +1,54 @@
+#1 A program for you to calculate the length of a string.
+text = input("Enter a string: ")
+print("Length of the string:", len(text))
+
+
+#2 A program counts the number of characters in a string.
+text2 = input("\nEnter another string: ")
+count = 0
+for char in text2:
+    count += 1
+print("Number of characters:", count)
+
+
+#3 Change all occurrences of the first character to '$' except the first char.
+text3 = input("\nEnter a string: ")
+first = text3[0]
+result = first + text3[1:].replace(first, "$")
+print("Result:", result)
+
+
+#4 Swap the first two characters of two strings.
+str1 = input("\nEnter first string: ")
+str2 = input("Enter second string: ")
+
+new_str1 = str2[:2] + str1[2:]
+new_str2 = str1[:2] + str2[2:]
+
+print("Swapped strings:", new_str1 + " " + new_str2)
+
+
+#5 Concatenate 4 variables with spaces.
+a = "I"
+b = "am"
+c = "studying"
+d = "Python"
+
+sentence = a + " " + b + " " + c + " " + d
+print("\nConcatenated sentence:", sentence)
+
+
+#6 Get two strings from user input and concatenate them.
+first_input = input("\nEnter first word: ")
+second_input = input("Enter second word: ")
+
+combined = first_input + " " + second_input
+print("Combined string:", combined)
+
+
+#7 Concatenate your name and age in a paragraph.
+name = "Rocelyn"
+age = "23"
+
+paragraph = "My name is " + name + " and I am " + age + " years old. I am learning Python programming."
+print("\nParagraph:", paragraph)
