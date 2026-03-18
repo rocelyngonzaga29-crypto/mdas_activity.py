@@ -1,0 +1,69 @@
+# Lab Activity - Combined Tasks
+
+# 1. Calculate the length of a string
+def length_of_string():
+    string = input("Enter a string to calculate its length: ")
+    print("Length of the string:", len(string))
+
+# 2. Count the number of characters in a string
+def count_characters():
+    string = input("Enter a string to count characters: ")
+    print("Number of characters in the string:", len(string))
+
+# 3. Change occurrences of first character (except the first) to '$'
+def replace_occurrences():
+    string = input("Enter a string for character replacement: ")
+    first_char = string[0]
+    modified_string = first_char + string[1:].replace(first_char, '$')
+    print("Modified string:", modified_string)
+
+# 4. Swap first two characters of two strings separated by space
+def swap_first_two_chars():
+    string1 = input("Enter first string: ")
+    string2 = input("Enter second string: ")
+    new_string1 = string2[:2] + string1[2:]
+    new_string2 = string1[:2] + string2[2:]
+    print("Swapped string result:", new_string1 + " " + new_string2)
+
+# 5. Concatenate 4 variables with spaces
+def concatenate_four_vars():
+    var1 = "Hello"
+    var2 = "this"
+    var3 = "is"
+    var4 = "Python"
+    result = var1 + " " + var2 + " " + var3 + " " + var4
+    print("Concatenated string with 4 variables:", result)
+
+# 6. Concatenate two user input strings
+def concatenate_two_inputs():
+    str1 = input("Enter first string to concatenate: ")
+    str2 = input("Enter second string to concatenate: ")
+    print("Concatenated string:", str1 + " " + str2)
+
+# 7. Concatenate name and age in a paragraph
+def concatenate_name_age():
+    name = input("Enter your name: ")
+    age = input("Enter your age: ")
+    paragraph = "My name is " + name + " and I am " + age + " years old."
+    print(paragraph)
+
+
+# Run all functions one by one (you can comment out those not needed)
+def main():
+    print("\nTask 1:")
+    length_of_string()
+    print("\nTask 2:")
+    count_characters()
+    print("\nTask 3:")
+    replace_occurrences()
+    print("\nTask 4:")
+    swap_first_two_chars()
+    print("\nTask 5:")
+    concatenate_four_vars()
+    print("\nTask 6:")
+    concatenate_two_inputs()
+    print("\nTask 7:")
+    concatenate_name_age()
+
+if __name__ == "__main__":
+    main()
